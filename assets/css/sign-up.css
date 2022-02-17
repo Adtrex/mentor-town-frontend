@@ -1,0 +1,173 @@
+nav {
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+    background-color: #08415c;
+    color: #fff;
+}
+
+main {
+    padding: 30px 5%;
+}
+
+.all-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.all-box .single-box-goals {
+    width: 380px;
+    margin: 30px 20px;
+}
+
+.all-box .single-box-join {
+    width: 450px;
+    margin: 30px 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .all-box .single-box-goals {
+        width: 450px;
+        margin: 30px 20px;
+    }
+    
+    .all-box .single-box-join {
+        width: 450px;
+        margin: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .all-box .single-box-goals {
+        width: 100%;
+        margin: 30px 20px;
+    }
+    
+    .all-box .single-box-join {
+        width: 100%;
+        margin: 30px 20px;
+    }
+}
+
+
+.main-single-box {
+    background: linear-gradient(180deg, #08415C 0%, #455A64 100%);
+    border: 1px solid #F1BF98;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 30px 5%;
+    height: 100%;
+}
+
+.main-single-box .target {
+    width: 200px;
+    height: auto;
+    margin: 80px auto;
+}
+
+.main-single-box .target img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-single-box .head {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main-single-box .head-join {
+    font-size: 25px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.main-single-box .content {
+    font-size: 18px;
+    text-align: center;
+    color: #6B818C;
+    margin: 10px 0;
+}
+
+.form-input {
+    margin: 10px 0px;
+}
+
+.form-input input {
+    background: none;
+    border: 1px solid #6B818C;
+}
+
+.sign-btn {
+    background: #fff;
+    padding: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.sign-btn p {
+    margin: 0;
+    color: #08415C;
+    text-align: center;
+    font-size: 18px;
+}
+
+.social-auth {
+    padding: 10px 0;
+}
+
+.social-auth-btn {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-hr {
+    color: #fff;
+    width: 100px;
+}
+
+.sign-with-text {
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-with-text p{
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.peach {
+    text-decoration: none;
+    color: #F1BF98;
+}
+
+label {
+    font-size: 16px;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+

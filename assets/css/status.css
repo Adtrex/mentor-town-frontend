@@ -1,0 +1,70 @@
+nav {
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+    background-color: #08415c;
+    color: #fff;
+}
+
+main {
+    padding: 30px 5%;
+}
+
+.box {
+    background: linear-gradient(180deg, #08415C 0%, #455A64 100%);
+    border: 1px solid #F1BF98;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 30px 0px;
+}
+
+.welcome-img {
+    width: 170px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.welcome-img img {
+    width: 170px;
+    height: auto;
+}
+
+.status-text {
+    text-align: center;
+    font-size: 21px;
+    margin: 20px auto;
+}
+
+.join-box {
+    display: flex;
+    justify-content: center;
+    color:  #08415C;
+    flex-wrap: wrap;
+}
+
+.single-join-box {
+    width: 200px;
+    text-align: center;
+    background-color: #E3EEF2;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.single-join-box .mentee {
+    margin: 10px auto;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.single-join-box .mentee img {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+

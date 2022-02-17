@@ -340,6 +340,10 @@ nav {
     padding-right: 5%;
 }
 
+.testimonials .head {
+    font-size: 28px;
+}
+
 @media screen and (max-width: 1142px) {
     .testimonial-main-img {
         position: relative;

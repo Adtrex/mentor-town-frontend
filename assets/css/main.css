@@ -243,6 +243,16 @@ nav {
     padding-right: 0 !important;
 }
 
+@media screen and (max-width: 540px) {
+    .mission {
+        padding-top: 20px;
+    }
+
+    .mission .left{
+        padding-bottom: 20px;
+    }
+}
+
 .mission .right{
     padding-right: 0 !important;
 }

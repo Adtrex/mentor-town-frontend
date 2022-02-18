@@ -102,6 +102,7 @@ main {
 .form-input input {
     background: none;
     border: 1px solid #6B818C;
+    color: #fff;
 }
 
 .sign-btn {
@@ -110,12 +111,17 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 2px;
+    font-size: 28px;
 }
 
 .sign-btn p {
     margin: 0;
     color: #08415C;
     text-align: center;
+    font-size: 18px;
+}
+
+.sign-btn i {
     font-size: 18px;
 }
 

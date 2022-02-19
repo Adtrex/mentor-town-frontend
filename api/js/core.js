@@ -24,7 +24,7 @@ function signup() {
     }
 
     $.ajax({
-        url: 'http://mentor-town-api.herokuapp.com/api/signup',
+        url: 'https://mentor-town-api.herokuapp.com/api/signup',
         method: 'POST',
         dataType: 'json',
         data: JSON.stringify(all_data),
@@ -93,7 +93,7 @@ function signin() {
     };
 
     $.ajax({
-        url: 'http://mentor-town-api.herokuapp.com/api/signin',
+        url: 'https://mentor-town-api.herokuapp.com/api/signin',
         method: 'POST',
         dataType: 'json',
         data: JSON.stringify(all_data),
@@ -149,7 +149,7 @@ function matchMentee() {
         headers: {
             'Authorization': 'Bearer ' + access_token
           },
-        url: 'http://mentor-town-api.herokuapp.com/api/mentee/match',
+        url: 'https://mentor-town-api.herokuapp.com/api/mentee/match',
         method: 'POST',
         dataType: 'json',
         data: JSON.stringify(all_data),
@@ -204,7 +204,7 @@ function matchMentor() {
         headers: {
             'Authorization': 'Bearer ' + access_token
           },
-        url: 'http://mentor-town-api.herokuapp.com/api/mentor/match',
+        url: 'https://mentor-town-api.herokuapp.com/api/mentor/match',
         method: 'POST',
         dataType: 'json',
         data: JSON.stringify(all_data),

@@ -145,6 +145,10 @@ main {
     padding: 10px 0;
 }
 
+.social-auth .social-box {
+    padding-right: 0 !important;
+}
+
 .social-auth-btn {
     background-color: #fff;
     border-radius: 2px;

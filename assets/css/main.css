@@ -157,6 +157,7 @@ nav {
     padding: 5px 15px !important;
     text-align: center;
     margin-right: 0 !important;
+    cursor: pointer;
 }
 
 .nav-link-join a {

@@ -231,3 +231,41 @@ function matchMentor() {
         }
     });
 }
+
+function loggedIn() {
+    let access_token = getCookie("access_token");
+
+    if(access_token != "") {
+        window.location.href = "join.html";
+    } else {
+        
+    }
+}
+
+function logout() {
+    let access_token = getCookie("access_token");
+
+    $.ajax({
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+          },
+        url: 'https://mentor-town-api.herokuapp.com/api/logout',
+        method: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        beforeSend: function(){
+            
+        },
+        error: function(result){
+            if(result.status != 201) {
+                error = result.responseJSON;
+                //document.getElementById('error').innerHTML = Object.values(error)[0];
+            }
+        },
+        success: function(result){
+            document.cookie = `access_token= ${access_token}; expires=Sun, 20 Aug 2000 12:00:00 UTC`;
+
+            window.location.href = "sign-in.html";
+        }
+    });
+}

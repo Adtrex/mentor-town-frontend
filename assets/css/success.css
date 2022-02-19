@@ -1,0 +1,33 @@
+.success-box {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 750px) {
+    .success-box {
+        width: 90%;
+
+    }
+}
+
+.head-congrat {
+    text-align: center !important;
+}
+
+.success-box a  {
+    text-decoration: none !important;
+}
+
+.success-box .vector-check {
+    width: 100px;
+    height: auto;
+    margin: 10px auto !important;
+}
+
+.success-box .vector-check img{
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}

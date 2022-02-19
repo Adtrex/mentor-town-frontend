@@ -229,20 +229,32 @@ nav {
     padding-right: 5%;
 }
 
-.sponsors .box ::-webkit-scrollbar {
+.sponsors ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .sponsors .box {
-    display: flex;
     width: 70%;
     margin: 0 auto;
     justify-content: center;
     box-shadow: 2px 2px 2px #eeeeee;
-    align-items: center;
+    align-items: space-evenly;
     overflow-x: auto;
-    white-space: nowrap;
+}
+@media screen and (max-width: 540px) {
+    .sponsors .box {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        box-shadow: 2px 2px 2px #eeeeee;
+        align-items: space-evenly;
+        overflow-x: auto;
+        /* white-space: nowrap; */
+        padding-bottom: 0;
+        /* height: 50px; */
+        padding: 10px;
+    }
 }
 
 .sponsors .box img {

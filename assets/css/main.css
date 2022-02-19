@@ -133,6 +133,16 @@ nav {
         margin: 0px 5% !important;
         padding: 5px 0px !important;
     }
+    .nav-head .left {
+        width: 40%;
+        margin-left: 0px;
+    }
+    
+    .nav-head .right {
+        width: 60%;
+        justify-content: flex-end;
+    }
+    
 }
 
 @media screen and (min-width: 930px) {

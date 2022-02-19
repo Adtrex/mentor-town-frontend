@@ -105,6 +105,7 @@ main {
 
 .form-input {
     margin: 10px 0px;
+    padding-right: 0;
 }
 
 .form-input input {
@@ -156,7 +157,11 @@ main {
 
 .social-hr {
     color: #fff;
-    width: 100px;
+    width: 20%;
+}
+
+.social-hr hr {
+    width: 100%;
 }
 
 .sign-with-text {
@@ -165,7 +170,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
+
+
 
 .sign-with-text p{
     margin-bottom: 0;
@@ -190,6 +198,12 @@ label {
 
 .checkbox {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label{
+    margin-left: 10px;
 }
 
 .error p{

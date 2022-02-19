@@ -171,6 +171,10 @@ nav {
 }
 
 .nav-link-join a {
+    color: #F1BF98 !important;
+}
+
+.nav-link-join-slide a {
     color: #F1BF98;
 }
 
@@ -234,7 +238,7 @@ nav {
     display: flex;
     width: 70%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
     box-shadow: 2px 2px 2px #eeeeee;
     align-items: center;
     overflow-x: auto;

@@ -218,6 +218,14 @@ nav {
     .right-hero {
         display: none;
     }
+
+    .left-hero {
+        text-align: center;
+    }
+
+    .left-hero h2 {
+        width: 100%;
+    }
 }
 
 .sponsors {

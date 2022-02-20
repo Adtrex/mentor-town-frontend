@@ -581,7 +581,7 @@ nav {
     width: 300px;
     box-shadow: 2px 2px 2px #eeeeee;
     margin: 10px 10px;
-    padding: 0 5%;
+    padding: 0 10px;
 }
 
 .single-different .vector{ 
@@ -667,5 +667,22 @@ nav {
     margin: 8px 0;
 }
 
+.foot-social {
+    align-items: center;
+    display: flex;
+}
+
+.foot-social-single {
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #08415C;
+    text-align: center;
+    align-items: center;
+    padding-top: 4px;
+    margin: 0 3px;
+}
 
 

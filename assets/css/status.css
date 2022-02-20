@@ -52,10 +52,11 @@ main {
     background-color: #E3EEF2;
     margin: 10px 10px;
     border-radius: 5px;
+    padding: 5px 0;
 }
 
 .single-join-box .mentee {
-    margin: 10px auto;
+    margin: 5px auto;
     align-items: center;
     width: 100px;
     height: 100px;

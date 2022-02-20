@@ -29,11 +29,19 @@ main {
 .all-box .single-box-goals {
     width: 380px;
     margin: 30px 20px;
+    margin-bottom: 0;
 }
 
 .all-box .single-box-join {
     width: 450px;
     margin: 30px 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1026px) {
+    .all-box .single-box-goals {
+       display: none;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -68,14 +76,14 @@ main {
     border: 1px solid #F1BF98;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 30px 5%;
+    padding: 5%;
     height: 100%;
 }
 
 .main-single-box .target {
     width: 200px;
     height: auto;
-    margin: 80px auto;
+    margin: 70px auto;
 }
 
 .main-single-box .target img {
@@ -101,10 +109,11 @@ main {
     text-align: center;
     color: #6B818C;
     margin: 10px 0;
+    padding-top: 10px;
 }
 
 .form-input {
-    margin: 10px 0px;
+    margin: 8px 0px;
     padding-right: 0;
 }
 
@@ -112,6 +121,7 @@ main {
     background: none;
     border: 1px solid #6B818C;
     color: #fff;
+    font-size: 16px;
 }
 
 .form-input select {
@@ -188,7 +198,7 @@ main {
 .bottom-text {
     text-align: center;
     font-size: 16px;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 .peach {
@@ -201,7 +211,7 @@ label {
 }
 
 .checkbox {
-    margin: 10px 0;
+    margin: 0px 0;
     display: flex;
     align-items: center;
 }
@@ -214,6 +224,7 @@ label {
     text-align: center;
     color: rgb(255, 78, 78);
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .forgot-password {

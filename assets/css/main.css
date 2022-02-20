@@ -199,11 +199,11 @@ nav {
 }
 
 .left-hero button {
-    padding: 5px 10px;
+    padding: 5px 20px;
     color: #08415C;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -242,6 +242,12 @@ nav {
     align-items: space-evenly;
     overflow-x: auto;
 }
+
+.sponsors .box span{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 @media screen and (max-width: 540px) {
     .sponsors .box {
         width: 100%;
@@ -250,7 +256,7 @@ nav {
         box-shadow: 2px 2px 2px #eeeeee;
         align-items: space-evenly;
         overflow-x: auto;
-        /* white-space: nowrap; */
+        white-space: nowrap;
         padding-bottom: 0;
         /* height: 50px; */
         padding: 10px;
@@ -385,6 +391,7 @@ nav {
 
 .testimonials .head {
     font-size: 28px;
+    color: #08415C;
 }
 
 @media screen and (max-width: 1142px) {
@@ -424,12 +431,27 @@ nav {
     }
 }
 
-
-
 .testimonial-main-img img{
     width: 21rem;
-    height: 21rem;
+    height: 300;
     object-fit: cover;
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .testimonial-main-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-main-img img{
+        width: 18rem;
+        height: auto;
+        object-fit: cover;
+    
+    }
 
 }
 
@@ -611,8 +633,8 @@ nav {
 .join-mentor-cta {
     box-shadow: 0px 2px 2px #a8a8a8;
     text-align: center;
-    width: 170px;
-    padding: 10px 0;
+    width: 200px;
+    padding: 10px 10px;
     margin: auto;
     margin-top: 30px;
     border-radius: 5px;

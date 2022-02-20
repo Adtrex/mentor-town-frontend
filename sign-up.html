@@ -55,28 +55,29 @@
                             <input type="text" class="form-control" id="name" placeholder="Enter your name">
                         </div>
                         <div class="row">
-                            <div class="col-md-7 mb-3 form-input">
+                            <div class="col-md-7 form-input">
                                 <label for="email">E-mail<span class="peach">*</span></label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
                             </div>
-                            <div class="col-md-5 mb-3 form-input">
+                            <div class="col-md-5 form-input">
                                 <label for="name">Password<span class="peach">*</span></label>
                                 <input type="text" class="form-control" id="password" placeholder="Type your password">
                             </div>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="terms" placeholder="">
-                            <label for="checkbox">I agree to the <span class="peach">Terms of Service</span> and <span class="peach">Privacy Policy</span> </label>
+                            <label for="checkbox" style="font-size:14px;">I agree to the <span class="peach">Terms of Service</span> and <span class="peach">Privacy Policy</span> </label>
                         </div>
                         <div class="sign-btn" id="sign-btn" onclick="signup()">
                             <p>Sign Up</p>
                         </div>
-                        <div class="error" id="show-error" style="display:none;">
-                            <p id="error">An unexpected error occurred</p>
-                        </div>
                         <div class="sign-btn" id="sign-btn-load" style="display: none;">
                             <p><i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:18px;"></i></p>
                         </div>
+                        <div class="error" id="show-error" style="display:none;">
+                            <p id="error">An unexpected error occurred</p>
+                        </div>
+                        
                         <div class="sign-with-text">
                             <div class="social-hr"><hr></div>
                             <div><p>or Sign up with</p></div>

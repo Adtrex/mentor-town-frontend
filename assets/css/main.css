@@ -665,6 +665,11 @@ nav {
     color: #fff;
 }
 
+.foot-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .foot-links h5 {
     font-size: 23px;
     margin: 20px 0;

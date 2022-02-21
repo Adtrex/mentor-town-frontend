@@ -80,6 +80,7 @@ nav {
         font-size: 28px;
         align-items: center;
         cursor: pointer;
+        color: #F1BF98;
     }
 
     .sidenav {
@@ -672,7 +673,7 @@ nav {
 
 .foot-links h5 {
     font-size: 23px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .foot-links p {
@@ -696,6 +697,10 @@ nav {
     align-items: center;
     padding-top: 4px;
     margin: 0 3px;
+}
+
+.single-foot-link {
+    margin-bottom: 10px;
 }
 
 

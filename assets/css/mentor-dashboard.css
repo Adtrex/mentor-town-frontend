@@ -3,8 +3,9 @@
 }
 
 body {
-    background-color: #08415c;
     background-image: linear-gradient(#08415c, #EEE5E0);
+    padding: 0px;
+    margin: 0px;
 }
 
 .logo-text-cont {
@@ -108,7 +109,7 @@ body {
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
-    width: 13%;
+    width: 150px;
 }
 
 .sub-topnav-icons {
@@ -138,6 +139,7 @@ body {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-title {
@@ -215,7 +217,7 @@ body {
 }
 
 .day-cont {
-    width: 5%;
+    width: 60px;
     display: flex;
     align-items: flex-start;
 }
@@ -276,4 +278,154 @@ body {
     color: #F1BF98;
 }
 
-/* border: 1px solid #F1BF98; */
+@media screen and (max-width: 1304px) {
+    .card {
+        width: 30%;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .sidenav-2 ul  {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1093px) {
+    .sidenav-2  {
+        width: 18%;
+    }
+
+    .body-section {
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    .schedule-item-sub,
+    .schedule-item-sub-1 {
+       width: 85%; 
+    } 
+} 
+
+@media screen and (max-width: 1000px) {
+    .sidenav-2  {
+        display: none;
+    }
+
+    .body-section {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .flex-cont {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+} 
+
+@media screen and (max-width: 887px) {
+    .card-holder {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .body-section {
+        margin: 0px 1%;
+    }
+
+    .flex-cont-2 {
+        width: 100%;
+    }
+
+    .graph-image {
+        width: 100%;
+    }
+
+    .schedule-item-sub,
+    .schedule-item-sub-1 {
+       width: 80%; 
+    } 
+}
+
+@media screen and (max-width: 672px) {
+    .body-section {
+        margin: 0px 0.05%;
+    }
+
+   
+}
+
+@media screen and (max-width: 623px) {
+    .search-input-cont {
+        width: 300px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .schedule-item {
+        height: 150px;
+    }
+
+    .schedule-item-sub,
+    .schedule-item-sub-1 {
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       padding-left: 20px;
+       width: 75%;
+    } 
+}
+
+@media screen and (max-width: 516px) {
+    .search-input-cont {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 502px) {
+    .schedule-item-sub,
+    .schedule-item-sub-1 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .card-holder {
+        width: 95%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .sub-topnav {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    .body-section {
+        margin: 0%;
+    }
+} 
+
+@media screen and (max-width: 353px) {
+    .sub-topnav {
+        width: 120px;
+    }
+
+    .schedule-item-sub,
+    .schedule-item-sub-1 {
+        width: 50%;
+    }
+}

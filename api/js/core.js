@@ -243,7 +243,7 @@ function loggedIn() {
     }
 }
 
-function logout() {
+/*function logout() {
     let access_token = getCookie("access_token");
 
     $.ajax({
@@ -255,12 +255,14 @@ function logout() {
         dataType: 'json',
         contentType: 'application/json',
         beforeSend: function(){
-            
+            document.getElementById('logout-loader').style.display = 'block';
+            document.getElementById('logout-text').style.display = 'none';
         },
         error: function(result){
             if(result.status != 201) {
                 error = result.responseJSON;
                 //document.getElementById('error').innerHTML = Object.values(error)[0];
+                
             }
         },
         success: function(result){
@@ -269,6 +271,14 @@ function logout() {
             window.location.href = "sign-in.html";
         }
     });
+}*/
+
+function logout() {
+    let access_token = getCookie("access_token");
+
+    document.cookie = `access_token= ${access_token}; expires=Sun, 20 Aug 2000 12:00:00 UTC`;
+
+    window.location.href = "sign-in.html";
 }
 
 function getStatus() {

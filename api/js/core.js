@@ -117,7 +117,19 @@ function signin() {
             access_token = result.token;
             document.cookie = "access_token=" + access_token;
 
-            window.location.href = "join.html";
+            user_status = result.user.status;
+            if (user_status == 0){
+                window.location.href = "join.html";
+            }
+
+            if (user_status == 1){
+                window.location.href = "mentor-dashboard.html";
+            }
+
+            if (user_status == 2){
+                window.location.href = "mentee-dashboard.html";
+            }
+            
         }
     });
 }

@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="assets/css/nav-slider.css">
     <link rel="stylesheet" href="assets/js/nav-slider.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="api/js/core.js"></script>
     <script>
         window.onload = getAccess();
+        window.onload = getStatus();
     </script>
 </head>
 <body>
@@ -75,9 +77,9 @@
                             <label for="interest">Area of Interest<span class="peach">*</span></label>
                             <select type="text" class="form-control" id="interest">
                                 <option value="">What would you like to help with ?</option>
-                                <option value="Beginner">Career Advice</option>
-                                <option value="Intermediate">Resume Review</option>
-                                <option value="Expert">Personal Branding</option>
+                                <option value="Career Advice">Career Advice</option>
+                                <option value="Resume Review">Resume Review</option>
+                                <option value="Personal Branding">Personal Branding</option>
                             </select>
                         </div>
                         <div class="form-input">
@@ -121,7 +123,7 @@
                 </div>
                 <h5 class="head-congrat">Thank You!</h5>
                 <p>You have been successfully paired with a Mentee</p>
-                <a href="#">
+                <a href="mentor-dashboard.html">
                     <div class="sign-btn" id="sign-btn" onclick="signup()">
                         <p>Go to dashboard</p>
                     </div>

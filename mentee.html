@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="assets/js/nav-slider.js">
     <link rel="stylesheet" href="assets/css/success.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="api/js/core.js"></script>
     <script>
         window.onload = getAccess();
+        window.onload = getStatus();
     </script>
 </head>
 <body>
@@ -120,7 +122,7 @@
                 </div>
                 <h5 class="head-congrat">Congrats!</h5>
                 <p>You have been successfully paired with a Mentor</p>
-                <a href="#">
+                <a href="mentee-dashboard.html">
                     <div class="sign-btn" id="sign-btn" onclick="signup()">
                         <p>Go to dashboard</p>
                     </div>

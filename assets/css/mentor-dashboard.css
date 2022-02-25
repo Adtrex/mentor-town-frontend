@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(#08415c, #EEE5E0);
+    background: #204b5f;
     padding: 0px;
     margin: 0px;
 }
@@ -15,50 +15,77 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .logo-text {
     color: white;
-    font-weight: 500;
-    font-size: 28px;
-    margin-right: 17px;
+    font-size: 21px;
+    /* margin-right: 5%; */
 }
 
 .sidenav-2 {
     height: 100vh;
+    /* width: 250px; */
     width: 16%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #08415c;
-    border-right: 0.5px solid white;
+    box-shadow: 2px 0px 2px rgba(227, 238, 242, 0.2);
 }
 
 .sidenav-2 ul {
-    margin: 28% auto;
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .sidenav-2 ul li{
-    text-decoration: none;
-    text-decoration-style: none;
     list-style-type: none;
 }
 
 .sidenav-2 li:nth-child(1) {
-    margin: 0px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .sidenav-2 li {
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 
-/* .active-link { 
+.side-link {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.side-link img{
+    width: 35px;
+    height: auto
+}
+
+.side-link p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.active-side-link {
+    background-color: white;
+    color: #08415c !important;
+    border-radius: 5px;
+}
+
+.active-side-link p {
+    color: #08415c !important;
+}
+
+/*.active-link { 
     background-color: white;
     color: #08415c;
     padding: 10px;
-    border-radius: 10px;
-} */
+    border-radius: 5px;
+}*/ 
 
 .sidenav-2 li span {
     margin-right: 10px;
@@ -71,7 +98,7 @@ body {
     color: white;
 }
 
-.sidenav-2 li a:hover {
+/*.sidenav-2 li a:hover {
     transition:  ease-in-out 0.2s;
     text-decoration: none;
     font-weight: 400;
@@ -80,10 +107,10 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-}
+}*/
 
 .sidenav-bottom-nav {
-    margin-top: 60%;
+    margin-top: 130%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,10 +135,13 @@ body {
 
 .sub-topnav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
     align-items: center;
-    width: 150px;
+    float: right;
+}
+
+.sub-topnav div{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .sub-topnav-icons {
@@ -140,47 +170,60 @@ body {
 .flex-cont {
     display: flex; 
     flex-direction: row; 
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .card-holder,
+.graph-holder  {
+    border: 1px solid white;
+} */
+
+.graph-holder img {
+    
+}
+
+.graph-image_wrap {
+    width: 100%;
+    height: 320px;
+    
+}
+
+.graph-image_wrap img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-holder {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .card-title {
     color: white; 
     margin-left: 1%; 
-    margin-bottom: 10px;
-    font-weight: 600; 
-    font-size: 24px;
+    margin-bottom: 10px; 
+    font-size: 18px;
 }
 
 .card-title:nth-child(2) {
     color: white; 
     margin-right: 1%; 
     font-weight: 400; 
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .card {
     background-color: #08415c;
-    padding: 40px 10px;
+    padding: 25px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    width: 30%;
+    width: 60%;
     border-radius: 10px;
-}
-
-.card-name {
-    color: #EEE5E0; 
-    font-weight: 400; 
-    font-size: 24px; 
-    margin-bottom: 0px;
-}
-
-.card-job {
-    font-weight: 400;
-    font-size: 20px;
-    color: #E3EEF2;
 }
 
 .sub-card-div {
@@ -194,7 +237,6 @@ body {
     font-size: 20px;
     color: white;
     margin-top: 8px;
-    margin-right: 0px;
 }
 
 .sub-card-div ul {
@@ -207,6 +249,19 @@ body {
 
 .card h3 p {
     margin: 10px auto;
+}
+
+.flex-cont-2 {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.schedule-holder {
+    background-color: #08415c; 
+    width: 100%; 
+    border-radius: 20px; 
+    padding: 10px 0px;
 }
 
 .schedule-item {
@@ -255,6 +310,7 @@ body {
     margin-bottom: 10px;
 }
 
+
 .schedule-item-sub p {
     color: #E3EEF2;
 }
@@ -262,7 +318,6 @@ body {
 .schedule-item-sub-1 p {
     color: #F1BF98;
 }
-
 
 .schedule-item-sub button {
     padding: 10px;
@@ -281,15 +336,23 @@ body {
 }
 
 @media screen and (max-width: 1304px) {
+    .flex-cont {
+        flex-direction: column;
+    }
+
+    .flex-cont-2 {
+        width: 100%;
+    }
+
     .card {
-        width: 30%;
-        margin: 10px 0px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1260px) {
     .sidenav-2 ul  {
         padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -320,19 +383,9 @@ body {
     }
 }
 
-@media screen and (max-width: 970px) {
-    .flex-cont {
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: 300px;
-    }
-} 
-
 @media screen and (max-width: 887px) {
     .card-holder {
-        width: 400px;
+        width: 100%;
     }
 }
 
@@ -365,7 +418,7 @@ body {
 
 @media screen and (max-width: 623px) {
     .search-input-cont {
-        width: 300px;
+        width: 50%;
     }
 
     .search-input {
@@ -409,15 +462,13 @@ body {
     }
 }
 
-@media screen and (max-width: 437px) {
-    .sub-topnav {
-        width: 130px;
-    }
-}
-
 @media screen and (max-width: 383px) {
     .body-section {
         margin: 0%;
+    }
+
+    .sub-topnav {
+        width: 140px;
     }
 } 
 
@@ -429,5 +480,39 @@ body {
     .schedule-item-sub,
     .schedule-item-sub-1 {
         width: 50%;
+    }
+}
+
+.single-info {
+    display: flex;
+    color: #fff;
+}
+
+.single-info p {
+    font-size: 14px;
+}
+
+.single-info div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.shedule {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 540px) {
+
+    .shedule {
+        display: none;
+    }
+
+    .search-input-cont {
+        display: none;
+    }
+
+    .sub-topnav {
+        width: 100%;
+        justify-content: flex-end;
     }
 }

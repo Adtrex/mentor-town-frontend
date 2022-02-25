@@ -160,11 +160,12 @@ function matchMentee() {
         },
         error: function(result){
             if(result.status == 311) {
-                error = result.responseJSON;
+                console.log(result);
+                error = result.responseText;
                 document.getElementById('sign-btn').style.display = 'block';
                 document.getElementById('sign-btn-load').style.display = 'none';
                 document.getElementById('show-error').style.display = 'block';
-                document.getElementById('error').innerHTML = Object.values(error)[0];
+                document.getElementById('error').innerHTML = error;
             } else {
                 document.getElementById('success').style.display = 'block';
                 document.getElementById('join-form').style.display = 'none';
@@ -266,6 +267,89 @@ function logout() {
             document.cookie = `access_token= ${access_token}; expires=Sun, 20 Aug 2000 12:00:00 UTC`;
 
             window.location.href = "sign-in.html";
+        }
+    });
+}
+
+function getStatus() {
+    let access_token = getCookie("access_token");
+
+    $.ajax({
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+          },
+        url: 'https://mentor-town-api.herokuapp.com/api/status',
+        method: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        beforeSend: function(){
+            
+        },
+        error: function(result){
+            if(result.status != 201) {
+                error = result.responseJSON;
+                //document.getElementById('error').innerHTML = Object.values(error)[0];
+            }
+        },
+        success: function(result){
+            console.log(result);
+
+            if(result == 0) {
+
+            }
+
+            if(result == 1) {
+                window.location.href = "mentor-dashboard.html";
+            }
+
+            if(result == 2) {
+                window.location.href = "mentee-dashboard.html";
+            }
+
+            //window.location.href = "sign-in.html";
+        }
+    });
+}
+
+function matchedMentor() {
+    let access_token = getCookie("access_token");
+
+    $.ajax({
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+          },
+        url: 'https://mentor-town-api.herokuapp.com/api/matched-mentor',
+        method: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        beforeSend: function(){
+            
+        },
+        error: function(result){
+            if(result.status != 201) {
+                error = result.responseJSON;
+                console.log(result);
+                //document.getElementById('error').innerHTML = Object.values(error)[0];
+            } 
+        },
+        success: function(result){
+            console.log(result);
+            mentor_name = result.name;
+            mentor_interest = result.interest;
+            mentor_available = result.available;
+            mentor_profession = result.profession;
+
+            document.getElementById('mentor_name').innerHTML = mentor_name;
+            document.getElementById('mentor_interest').innerHTML = mentor_interest;
+            document.getElementById('mentor_available').innerHTML = mentor_available;
+            document.getElementById('mentor_profession').innerHTML = mentor_profession;
+
+            document.getElementById('mentor_loader').style.display = 'none';
+            document.getElementById('mentor_info').style.display = 'block';
+
+
+
+            //window.location.href = "sign-in.html";
         }
     });
 }

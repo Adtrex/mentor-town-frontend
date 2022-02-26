@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         window.onload = getAccess();
+        window.onload = matchedMentees();
     </script>
 </head>
 <body>
@@ -139,90 +140,9 @@
                         <p class="card-title">Meet Your Mentees</p>
 
                         <div class="row" id="all-mentees">
-                            <div class="col-lg-4" style="margin-top: 10px">
-                                <div class="card">
-                                    <img 
-                                        src="assets/img/person/Ellipse 12.png" 
-                                        alt="image" 
-                                        style="width: 80px; height: 80px; border-radius: 50px;"
-                                    />
-    
-                                    <p style="color: #EEE5E0; font-weight: 500; font-size: 16px; margin-bottom: 10px;">
-                                        Tim Tunde
-                                    </p>
-    
-                                    <div class="all-info">
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/ranking.png"></div>
-                                            <div><p>Snr Product Manager</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/advise.png"></div>
-                                            <div><p>Areas of interest <br />Career Advice</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/time.png"></div>
-                                            <div><p>Availability <br />Twice a week</p></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div class="col-lg-4" style="margin-top: 10px">
-                                <div class="card">
-                                    <img 
-                                        src="assets/img/person/Ellipse 12.png" 
-                                        alt="image" 
-                                        style="width: 80px; height: 80px; border-radius: 50px;"
-                                    />
-    
-                                    <p style="color: #EEE5E0; font-weight: 500; font-size: 16px; margin-bottom: 10px;">
-                                        Tim Tunde
-                                    </p>
-    
-                                    <div class="all-info">
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/ranking.png"></div>
-                                            <div><p>Snr Product Manager</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/advise.png"></div>
-                                            <div><p>Areas of interest <br />Career Advice</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/time.png"></div>
-                                            <div><p>Availability <br />Twice a week</p></div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card" id="mentee_loader">
+                                <div  style="color: #fff; font-size:18px;">Fetching Mentees &nbsp;<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:18px;"></i></div>
                             </div>
-                            <div class="col-lg-4" style="margin-top: 10px">
-                                <div class="card">
-                                    <img 
-                                        src="assets/img/person/Ellipse 12.png" 
-                                        alt="image" 
-                                        style="width: 80px; height: 80px; border-radius: 50px;"
-                                    />
-    
-                                    <p style="color: #EEE5E0; font-weight: 500; font-size: 16px; margin-bottom: 10px;">
-                                        Tim Tunde
-                                    </p>
-    
-                                    <div class="all-info">
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/ranking.png"></div>
-                                            <div><p>Snr Product Manager</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/advise.png"></div>
-                                            <div><p>Areas of interest <br />Career Advice</p></div>
-                                        </div>
-                                        <div class="single-info">
-                                            <div><img src="assets/img/vector/time.png"></div>
-                                            <div><p>Availability <br />Twice a week</p></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                        
                         </div>
                         
                 </div> 

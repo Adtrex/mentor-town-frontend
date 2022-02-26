@@ -375,3 +375,78 @@ function matchedMentor() {
         }
     });
 }
+
+function matchedMentees() {
+    let access_token = getCookie("access_token");
+
+    $.ajax({
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+          },
+        url: 'https://mentor-town-api.herokuapp.com/api/matched-mentee',
+        method: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        beforeSend: function(){
+            
+        },
+        error: function(result){
+            if(result.status != 201) {
+                error = result.responseJSON;
+                console.log(result);
+                //document.getElementById('error').innerHTML = Object.values(error)[0];
+            } 
+        },
+        success: function(result){
+
+            var mentee_list = document.getElementById('all-mentees');
+
+            if(result.length == 0){
+                mentee_list.innerHTML += "<div class='card' style='color: #fff; font-size:18px; margin-bottom:0; text-align:center;'><p style='margin-bottom:0;'>You will be matched with a mentee soon</p></div>";
+            } else {
+                console.log(result);
+            
+                for(var i=0; i < result.length; i++) {
+                var mentee  =  `<div class="col-lg-4" style="margin-top: 10px">
+                                    <div class="card">
+                                        <img 
+                                            src="assets/img/person/Ellipse 12.png" 
+                                            alt="image" 
+                                            style="width: 80px; height: 80px; border-radius: 50px;"
+                                        />
+
+                                        <p style="color: #EEE5E0; font-weight: 500; font-size: 16px; margin-bottom: 10px;">
+                                            ${result[i].name}
+                                        </p>
+
+                                        <div class="all-info">
+                                            <div class="single-info">
+                                                <div><img src="assets/img/vector/ranking.png"></div>
+                                                <div><p>${result[i].profession}</p></div>
+                                            </div>
+                                            <div class="single-info">
+                                                <div><img src="assets/img/vector/advise.png"></div>
+                                                <div><p>Industry <br />${result[i].industry}</p></div>
+                                            </div>
+                                            <div class="single-info">
+                                                <div><img src="assets/img/vector/level.png"></div>
+                                                <div><p>level of experience <br />${result[i].experience}</p></div>
+                                            </div>
+                                            <div class="single-info">
+                                                <div><img src="assets/img/vector/time.png"></div>
+                                                <div><p>Availability <br />${result[i].available}</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  `;
+                                mentee_list.innerHTML += mentee;
+                }
+
+                
+            }
+
+            document.getElementById('mentee_loader').style.display = 'none';
+
+        }
+    });
+}
